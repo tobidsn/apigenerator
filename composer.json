@@ -1,0 +1,43 @@
+{
+    "name": "tobidsn/apigenerator",
+    "type": "library",
+    "description": "Laravel Api CRUD Generator",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "crud",
+        "crud generator",
+        "laravel crud generator",
+        "admin generator"
+    ],
+    "authors": [
+        {
+            "name": "Tobidsn",
+            "email": "tobidsn@gmail.com",
+            "homepage": "https://github.com/tobidsn"
+        }
+    ],
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.3.3|^1.4.2",
+        "phpunit/phpunit": "^8.5.8|^9.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tobidsn\\ApiGenerator\\": "src/"
+        },
+        "classmap": [
+            "tests"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tobidsn\\ApiGenerator\\ApiGeneratorServiceProvider"
+            ]
+        }
+    }
+}
